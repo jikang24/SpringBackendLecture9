@@ -1,7 +1,5 @@
 package org.example.Head06_SpringOverview.example2;
 
-import org.example.Head06_SpringOverview.example2.MenuService;
-import org.example.Head06_SpringOverview.example2.MenuServiceStub;
 
 import java.awt.*;
 
