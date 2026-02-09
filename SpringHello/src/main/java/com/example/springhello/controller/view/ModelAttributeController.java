@@ -1,7 +1,6 @@
-package com.example.springhello.controller;
+package com.example.springhello.controller.view;
 
 import com.example.springhello.request.UserRequest;
-import org.apache.catalina.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;

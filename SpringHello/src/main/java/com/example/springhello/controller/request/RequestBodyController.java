@@ -1,6 +1,5 @@
-package com.example.springhello.controller;
+package com.example.springhello.controller.request;
 
-import com.example.springhello.dto.UserDTO;
 import com.example.springhello.request.UserRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;

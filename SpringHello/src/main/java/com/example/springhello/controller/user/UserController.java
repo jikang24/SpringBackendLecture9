@@ -1,6 +1,5 @@
-package com.example.springhello.controller;
+package com.example.springhello.controller.user;
 
-import com.example.springhello.dto.UserDTO;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
