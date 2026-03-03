@@ -97,6 +97,52 @@ public class MenuController {
     return service.searchMenus(minPrice, categoryName, pageable);
   }
 
+  //신규 추가
+  // 1) 커밋 확인
+  // POST /menus/tx/increase?categoryName=찌개류&delta=1000
+  @PostMapping("/tx/increase")
+  public void txIncrease(
+      @RequestParam String categoryName,
+      @RequestParam int delta
+  ) {
+    service.txIncrease(categoryName, delta);
+  }
+
+  //신규 추가
+  // 2) 롤백 확인
+  // POST /menus/tx/rollback?categoryName=찌개류&newMenuName=롤백메뉴&newMenuPrice=9999&delta=1000
+  @PostMapping("/tx/rollback")
+  public void txRollback(
+      @RequestParam String categoryName,
+      @RequestParam String newMenuName,
+      @RequestParam int newMenuPrice,
+      @RequestParam int delta
+  ) {
+    service.txCreateAndIncreaseWithRollback(categoryName, newMenuName, newMenuPrice, delta);
+  }
+
+  @PostMapping("/tx/propagation")
+  public String propagationTest(
+      @RequestParam Long menuId,
+      @RequestParam int newPrice
+  ) {
+    service.changePriceWithAuditAndFail(menuId, newPrice);
+    return "ok";
+  }
+
+  @GetMapping("/tx/isolation/read-twice")
+  public String readTwice(@RequestParam Long menuId) throws Exception {
+    int diff = service.readTwicePrice(menuId);
+    return "diff=" + diff;
+  }
+
+  @PostMapping("/tx/isolation/update")
+  public String updatePrice(@RequestParam Long menuId, @RequestParam int price) {
+    // 단순 업데이트: 기본 @Transactional 없어도 save/update는 커밋됨(요청 단위)
+    service.updatePrice(menuId, price); // 아래 updatePrice 메서드 하나 만들어두면 됨
+    return "updated";
+  }
+
 
 
 }
