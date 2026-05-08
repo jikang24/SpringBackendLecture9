@@ -1,4 +1,53 @@
-logging:
-  level:
-    root: INFO
-    com.example.springstablehigh: TRACE
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/menudb
+    username: menu_user
+    password: menu_pass
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: health, info, metrics
+
+
+
+
+#logging:
+#  level:
+#    root: INFO
+#    com.example.springstablehigh: TRACE
+#server:
+#  port: 8080
+#
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: health, info, metrics
+#  endpoint:
+#    health:
+#      show-details: always
+#  info:
+#    env:
+#      enabled: true   # Boot 4에서 필수
+#
+#info:
+#  app:
+#    name: actuator-demo
+#    version: 1.0.0
