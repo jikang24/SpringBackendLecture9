@@ -13,6 +13,14 @@
         <option name="resolveExternalAnnotations" value="true" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Spring-security-advanced-session" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/Spring-security-advanced-session" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/SpringHello" />
         <option name="modules">
           <set>
@@ -57,6 +65,14 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/practiceDb" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/springsecuritysessionmanagementcore" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/springsecuritysessionmanagementcore" />
           </set>
         </option>
       </GradleProjectSettings>
