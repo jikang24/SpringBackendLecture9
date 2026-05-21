@@ -77,6 +77,14 @@
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/spring-security-jwt-demo" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/spring-security-jwt-demo" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/springsecuritysessionmanagementcore" />
         <option name="modules">
           <set>
