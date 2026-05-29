@@ -18,29 +18,27 @@ public class CacheConfig {
   @Bean
   public CacheManager cacheManager() {
 
-    CaffeineCacheManager cacheManager = new CaffeineCacheManager();
+    CaffeineCacheManager cacheManager =
+        new CaffeineCacheManager();
 
     cacheManager.registerCustomCache(
         "products",
         Caffeine.newBuilder()
-            .maximumSize(3)
-            .expireAfterWrite(Duration.ofSeconds(10))
+            .maximumSize(5)
+            .expireAfterWrite(Duration.ofSeconds(30))
             .recordStats()
-            .removalListener((Object key, Object value, RemovalCause cause)
-    -> {
+            .removalListener((Object key, Object value, RemovalCause cause) -> {
+
               System.out.println(
                   "[" + LocalTime.now().withNano(0)
                       + "] [CacheRemovalListener] "
                       + "key=" + key
-                      + ", value=" + value
                       + ", cause=" + cause
               );
-
             })
             .build()
     );
 
     return cacheManager;
   }
-
 }
