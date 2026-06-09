@@ -53,6 +53,14 @@
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/SpringGraphQLDemo" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/SpringGraphQLDemo" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/SpringHello" />
         <option name="modules">
           <set>
@@ -61,10 +69,26 @@
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/SpringHttpsDemo" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/SpringHttpsDemo" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/SpringSecurity" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/SpringSecurity" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/SpringSseDemo" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/SpringSseDemo" />
           </set>
         </option>
       </GradleProjectSettings>
@@ -81,6 +105,14 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/SpringTDD" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/SpringWebSocketDemo" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/SpringWebSocketDemo" />
           </set>
         </option>
       </GradleProjectSettings>
