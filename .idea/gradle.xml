@@ -77,6 +77,14 @@
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/SpringNginxBasicDemo" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/SpringNginxBasicDemo" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/SpringNginxHttpsDemo" />
         <option name="modules">
           <set>
